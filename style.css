@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Space Mono',monospace;
+}
+.attribution{
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.base{
+    width:375px;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+   }
+
+.logo{
+    margin: 45px 0;
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    padding: 0 7%;
+
+}
+.input,
+.output{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.dollarsigncont,
+.peoplecont{
+    position:relative;
+}
+#dollarsign,
+#peoplesymbol{
+    position: absolute;
+    left:10px;
+    top: 25%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.bill,
+.tip,
+.people,
+.total_amount,
+.tip_amount{
+    font-weight:bolder;
+    font-size: 15px;
+    color: hsl(186, 14%, 43%);
+    
+}
+.bill{
+    margin-top: 8%;
+    margin-bottom: 11%;
+}
+.tip{
+    margin-bottom: 9%;
+}
+.selecttip{
+    text-align: start;
+    margin-bottom: 4%;
+}
+.total_amount,
+.tip_amount{
+    color:white;
+    margin:5% 4%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.tip_amount{
+    margin-top: 8%;
+}
+#bill,
+#people{
+    background-color: hsl(189, 41%, 97%);
+    padding:2px;
+    border-radius: 3px;
+    display: block;
+    text-align: end;
+    width:100%;
+    font-size: 24px;
+    font-weight:bolder;
+    color: hsl(183, 100%, 15%);
+    margin-top: 3%;
+    border:none;
+}
+#people{
+    margin-top:1%;
+}
+label{
+    display: block;
+    text-align: start;
+
+}
+.button-block{
+    display: flex;
+    flex-flow: row wrap;
+}
+.calc-button-left,
+.calc-button-right,
+.custom{
+    width:47.5%;
+    font-size: 23px;
+    font-weight: bolder;
+    color:white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 3px;
+    border:none;
+    margin:2.5% 0;
+    padding:5px 0;
+    cursor:pointer;
+}
+.custom{
+    color:hsl(186, 14%, 43%);;
+    background-color: hsl(189, 41%, 97%);
+    text-align: end;
+    
+}
+.custom:hover,
+#bill:hover,
+#people:hover{
+    
+    border:1.5px solid hsl(172, 67%, 80%);
+    cursor:pointer;
+}
+.reset-button:hover{
+    background-color: hsl(172, 67%, 80%);;
+}
+
+.calc-button-left{
+    margin-right: 5%;
+}
+.output{
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding:5%;
+ 
+}
+.reset-button{
+    display:block;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 20px;
+    width:90%;
+    margin: 5%;
+    border-radius: 5px;
+    border:none;
+    padding:8px;
+    cursor:pointer;
+}
+.result_tip,
+.result_total{
+    width:40%;
+    color: hsl(172, 67%, 45%);
+    font-size: 20px;
+}
+i{
+    font-size: 11px;
+    color:hsl(172, 67%, 45%);
+    text-align: left;
+    
+    font-style: normal;
+}
+.seleccionado{
+    background-color: hsl(172, 67%, 45%);;
+}
+
+@media (min-width: 950px){
+
+.base{
+    width:100vw;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+    padding:10% 13%;
+    }
+.calc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    padding:0 5%;
+    }
+
+.input,
+.output{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:50%;
+    margin: 5% 1%;   
+}
+.input{
+    margin-right: 5%;
+}
+.calc-button-left,
+.calc-button-right,
+.custom{
+    width:30%;
+    font-size: 23px;
+    font-weight: bolder;
+    color:white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 3px;
+    border:none;
+    margin:2.5% 0;
+    padding:5px 0;
+    
+}
+.button-block{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.bill{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.tip{
+    margin-bottom: 9%;
+}
+.selecttip{
+    text-align: start;
+    margin-bottom: 4%;
+}
+.output{
+    padding:1%;
+    justify-content: space-between;
+ 
+}
+
+.custom{
+    color:hsl(186, 14%, 43%);;
+    background-color: hsl(189, 41%, 97%);
+ 
+}
+.result_tip,
+.result_total{
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    width:65%;
+    text-align: end;
+}
+.seleccionado{
+    background-color: hsl(172, 67%, 45%);;
+}
+.error{
+    border:1px solid orange; 
+}
+
+}
